@@ -13,7 +13,13 @@ class Conta:
         dinheiro = dinheiro_retirado
         self.saldo += dinheiro
 
+    def ver_money(self):
+        money = self.__saldo
+        return money
+
     def rendimento_do_money(self, meses):
         meses = meses
+        render = 0
         while range(meses):
-            self.__saldo += self.__saldo * 0.1
+            render += self.__saldo * 0.1
+            return render
